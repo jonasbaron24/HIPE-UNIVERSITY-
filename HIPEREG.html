@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIPE UNIVERSITY - NEW STUDENT REGISTRATION</title>
+    <!--Bootstrap css(CDN)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!--custom css-->
+    <link rel="stylesheet" href="HIPEREG.css">
+</head>
+<body>
+ 
+    <!--header section-->
+    <header class="text-center py-4">
+        <h1 class="fw-bold">HIPE UNIVERSITY</h1>
+        <h3 class="mt-2">NEW STUDENT REGISTRATION</h3>
+        <P class="text-muted">please fill in the form below to complete your registration</P>
+    </header>
+    <!--main form section-->
+    <div class="text-center py-4">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card p-4 shadow">
+                    <form action="https://formspree.io/f/mjknavbb" method="post">
+                        <!--first & last name-->
+                        <div class="mb-3">
+                            <label class="form-label">First name</label>
+                            <input type="text" name="first_name" class="form-control" placeholder="enter your first name" required>
+            
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Last name</label>
+                            <input type="text" name="last_name" class="form-control" placeholder="enter your last name"required>
+                        </div>
+                        <!--phone-->
+                        <div class="mb-3">
+                            <label class="form-label">phone number</label>
+                            <input type="tel." name="phone" class="form-control" placeholder="e.g 675000000" required>
+                        </div>
+                        <!--DOB-->
+                        <div class="mb-3">
+                            <label class="form-label">date of birth</label>
+                            <input type="dob" class="form-control" required>
+                        </div>
+                        <!--gender-->
+                        <div class="mb-3">
+                            <label class="form-label">Gender</label><br>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">male</label>
+                                <input class="form-check-input" type="radio" name="gender" value="male" required>
+                            </div>
+                            <div class="form-check form-check-inline">
+                            <label class="form-check-label">female</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" value="female" required>
+                            </div>
+                        </div>
+                        <!--faculty-->
+                        <div class="mb-3">
+                            <label class="form-label">Faculty/School</label>
+                            <select class="form-select" name="Faculty" required>
+                                <option value="disabled selected">choose your faculty</option>
+                                <option >school of engineering</option>
+                                <option >school of Business</option>
+                                <option >school of ICT</option>
+                                <option >school of health sciences</option>
+                            </select>
+                        </div>
+                        <!--program-->
+                        <div class="mb-3">
+                            <label class="form-label">program of study</label>
+                            <select class="form-select" name="program" required>
+                                <option value="disabled selected">select program</option>
+                                <option>software engineering</option>
+                                <option>network & telecommunication</option>
+                                <option>business management</option>
+                            </select>
+                        </div>
+                        <!--level-->
+                        <div class="mb-3">
+                            <label for="form-label">level</label>
+                            <select class="form-select" name="level" required>
+                                <option value="disabled selected">choose level</option>
+                                <optio>HND</optio>
+                                 <optio>B-TECH</optio>
+                                  <optio>BSC</optio>
+                                   <optio>MASTERS</optio>
+                            </select>
+                        </div>
+                        <!--mode-->
+                        <div class="mb-3">
+                            <label class="form-label">mode of study</label><br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="mode" value="full time" required>
+                                <label class="form-check-label">full time</label>
+                            </div>
+                            <div class="form-check-input" type="radio" name="mode" value="pat time" required>
+                                <label class="form-check-label">part time</label>
+                            </div>
+                        </div>
+                        <!--Address-->
+                        <div class="mb-3">
+                            <label class="form-label">Address</label>
+                            <textarea class="form-control" name="address" rows="3" placeholder="enter full address" required></textarea>
+                        </div>
+                        <!--passwords-->
+                        <div class="mb-3">
+                            <label class="form-label">passwords</label>
+                            <input type="password" name="password" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">confirm password</label>
+                            <input type="password" name="confirm_password" class="form-control" required>
+                        </div>
+                        <!--Agreement-->
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" required>
+                            <label class="form-check-label">| confirm that the information provided is correct</label>
+                        </div>
+                        <!--submit-->
+                        <button type="submit" class="btn bnt-primary w-100">submit registration</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+   
+    <!--footer-->
+    <footer class="text-center py-4">
+        <p class="mb-0">HIPE UNIVERSITY</p>
+        <small>created by <strong>jonasbaron</strong>- matricule:<strong>25SWE1223</strong></small><br>
+        <small>2025</small>
+    </footer>
+    
+</body>
+</html>
